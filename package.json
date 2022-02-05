@@ -4,6 +4,16 @@
 	"description": "Experimental language support for Lithia",
 	"license": "MIT",
 	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vknabel/vscode-lithia"
+	},
+	"publisher": "vknabel",
+	"author": {
+		"name": "Valentin Knabel",
+		"email": "dev@vknabel.com",
+		"url": "https://github.com/vknabel"
+	},
 	"engines": {
 		"vscode": "^1.63.0"
 	},
