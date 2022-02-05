@@ -3,7 +3,9 @@
 	"displayName": "Lithia",
 	"description": "Experimental language support for Lithia",
 	"license": "MIT",
-	"version": "0.0.1",
+	"version": "0.0.2",
+	"icon": "resources/vscode-lithia-icon.png",
+	"preview": true,
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/vknabel/vscode-lithia"
