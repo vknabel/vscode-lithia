@@ -1,0 +1,78 @@
+{
+	"name": "vscode-lithia",
+	"displayName": "Lithia",
+	"description": "Experimental language support for Lithia",
+	"license": "MIT",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"onLanguage:lithia"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "lithia",
+				"aliases": [
+					"Lithia",
+					"lithia"
+				],
+				"extensions": [
+					".lithia"
+				],
+				"icon": {
+					"light": "./resources/lithia.svg",
+					"dark": "./resources/lithia.svg"
+				},
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "lithia",
+				"scopeName": "source.lithia",
+				"path": "./syntaxes/lithia.tmLanguage.json"
+			}
+		],
+		"configuration": {
+			"title": "Lithia",
+			"type": "object",
+			"properties": {
+				"lithia.path": {
+					"type": "string",
+					"description": "Path to Lithia executable",
+					"default": "/usr/local/bin/lithia"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.63.0",
+		"@typescript-eslint/eslint-plugin": "^5.9.1",
+		"@typescript-eslint/parser": "^5.9.1",
+		"@vscode/test-electron": "^2.0.3",
+		"eslint": "^8.6.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.1.3",
+		"typescript": "^4.5.4"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^7.0.0"
+	}
+}
