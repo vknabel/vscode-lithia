@@ -5,7 +5,9 @@ Adds basic support for the [Lithia programming language](https://github.com/vkna
 ## Requirements
 
 Requires lithia to be [installed](https://github.com/vknabel/lithia#installation).
-Thereafter set `lithia.path` to the path to the lithia executable.
+By default `lithia.path` is set to `["/usr/bin/env", "lithia"]` and should work on most setups.
+
+If not, set `lithia.path` to the correct, absolute path like `/usr/local/bin/lithia` or to a command as above.
 
 ## Status
 

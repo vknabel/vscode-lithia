@@ -3,7 +3,7 @@
 	"displayName": "Lithia",
 	"description": "Experimental language support for Lithia",
 	"license": "MIT",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"icon": "resources/vscode-lithia-icon.png",
 	"preview": true,
 	"repository": {
@@ -56,9 +56,35 @@
 			"type": "object",
 			"properties": {
 				"lithia.path": {
-					"type": "string",
-					"description": "Path to Lithia executable",
-					"default": "/usr/local/bin/lithia"
+					"description": "Path or command to Lithia executable.",
+					"scope": "machine",
+					"default": [
+						"/usr/bin/env",
+						"lithia"
+					],
+					"examples": [
+						[
+							"/usr/bin/env",
+							"lithia"
+						],
+						"/usr/local/bin/lithia"
+					],
+					"oneOf": [
+						{
+							"type": "string"
+						},
+						{
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"default": [
+									"/usr/bin/env",
+									"lithia"
+								]
+							}
+						}
+					]
 				}
 			}
 		}

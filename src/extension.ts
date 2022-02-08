@@ -34,11 +34,15 @@ function restartLSP() {
   if (client) {
     client.stop();
   }
+  const configCommand = vscode.workspace
+    .getConfiguration()
+    .get("lithia.path", ["/usr/bin/env", "lithia"]);
+  const commandArray =
+    typeof configCommand === "string" ? [configCommand] : configCommand;
+  const commandPath = commandArray[0];
   const serverOptions: ServerOptions = {
-    command: vscode.workspace
-      .getConfiguration()
-      .get("lithia.path", "/usr/local/bin/lithia"),
-    args: ["lsp", "stdio"],
+    command: commandPath,
+    args: [...commandArray.slice(1), "lsp", "stdio"],
     transport: TransportKind.stdio,
   };
   const clientOptions: LanguageClientOptions = {
