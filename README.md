@@ -2,6 +2,8 @@
 
 Adds basic support for the [Lithia programming language](https://github.com/vknabel/lithia) for Visual Studio Code.
 
+![vscode screenshot with syntax highlighting](./resources/vscode_screenshot.png)
+
 ## Requirements
 
 Requires lithia to be [installed](https://github.com/vknabel/lithia#installation).

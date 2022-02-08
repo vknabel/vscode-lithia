@@ -71,7 +71,8 @@
 					],
 					"oneOf": [
 						{
-							"type": "string"
+							"type": "string",
+							"default": "/usr/local/bin/lithia"
 						},
 						{
 							"type": "array",
