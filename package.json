@@ -3,7 +3,7 @@
 	"displayName": "Lithia",
 	"description": "Experimental language support for Lithia",
 	"license": "MIT",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"icon": "resources/vscode-lithia-icon.png",
 	"preview": true,
 	"repository": {
@@ -36,6 +36,9 @@
 				],
 				"extensions": [
 					".lithia"
+				],
+				"filenames": [
+					"Potfile"
 				],
 				"icon": {
 					"light": "./resources/lithia.svg",

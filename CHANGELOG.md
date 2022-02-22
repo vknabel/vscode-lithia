@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## v0.0.4
+
+- syntax support for `Potfile`
+- faster syntax support for comments
 - example screenshot in README.md
 
 ## v0.0.3

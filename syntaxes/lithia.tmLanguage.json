@@ -7,6 +7,9 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -26,6 +29,32 @@
 				{
 					"name": "constant.character.escape.lithia",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"comment": "Block comments",
+					"begin": "/\\*",
+					"end": "\\*/",
+					"captures": {
+						"0": {
+							"name": "punctuation.definition.comment.lithia"
+						}
+					},
+					"name": "comment.block.lithia"
+				},
+				{
+					"comment": "Line comments",
+					"begin": "//",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.lithia"
+						}
+					},
+					"end": "$",
+					"name": "comment.line.double-slash.lithia"
 				}
 			]
 		}
