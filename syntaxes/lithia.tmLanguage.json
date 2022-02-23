@@ -17,7 +17,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.lithia",
-					"match": "\\b(module|func|data|enum|import|type|let)\\b"
+					"match": "\\b(module|import|let|func|data|enum|extern|type)\\b"
 				}
 			]
 		},

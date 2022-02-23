@@ -3,7 +3,7 @@
 	"displayName": "Lithia",
 	"description": "Experimental language support for Lithia",
 	"license": "MIT",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"icon": "resources/vscode-lithia-icon.png",
 	"preview": true,
 	"repository": {

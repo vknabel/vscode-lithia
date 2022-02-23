@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## v0.0.5
+
+- faster syntax support for `extern`
+
 ## v0.0.4
 
 - syntax support for `Potfile`
