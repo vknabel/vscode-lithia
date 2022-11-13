@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## v0.0.6
+
+- dependency updates
+
 ## v0.0.5
 
 - faster syntax support for `extern`
