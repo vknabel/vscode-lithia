@@ -43,7 +43,6 @@ function restartLSP() {
   const serverOptions: ServerOptions = {
     command: commandPath,
     args: [...commandArray.slice(1), "lsp", "stdio"],
-    transport: TransportKind.stdio,
   };
   const clientOptions: LanguageClientOptions = {
     documentSelector: [
