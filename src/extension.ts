@@ -49,8 +49,6 @@ function restartLSP() {
     documentSelector: [
       { scheme: "file", language: "lithia" },
       { scheme: "file", pattern: "*.lithia" },
-      { scheme: "file", language: "swift" },
-      { scheme: "file", pattern: "*.swift" },
     ],
     outputChannelName: "Lithia",
   };
